@@ -1,0 +1,133 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#070A11" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF88" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#EAB308" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141E33" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0A111E" stop-opacity="0.95" />
+    </linearGradient>
+    <pattern id="gwGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10B981" stroke-width="0.8" stroke-opacity="0.08" />
+    </pattern>
+  </defs>
+
+  <!-- Frame -->
+  <rect width="1200" height="500" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="500" rx="16" fill="url(#gwGrid)" />
+  <rect x="1" y="1" width="1198" height="498" rx="15" fill="none" stroke="#10B981" stroke-opacity="0.3" stroke-width="1.5" />
+  <path d="M 16 2 L 1184 2" stroke="url(#emeraldGrad)" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Ambient Glow -->
+  <circle cx="240" cy="220" r="160" fill="#10B981" fill-opacity="0.06" filter="blur(60px)" />
+  <circle cx="960" cy="240" r="160" fill="#EAB308" fill-opacity="0.05" filter="blur(60px)" />
+
+  <!-- HEADER -->
+  <g transform="translate(60, 45)">
+    <rect width="44" height="44" rx="10" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-opacity="0.4" />
+    <text x="12" y="30" font-size="22">🎁</text>
+    <text x="56" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+      VENOY GIVEAWAY <tspan fill="url(#emeraldGrad)">💚</tspan>
+    </text>
+    <text x="56" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#94A3B8" letter-spacing="1">
+      SISTEMA DE SORTEIOS EM TEMPO REAL VIA WEBSOCKETS (WS)
+    </text>
+  </g>
+
+  <!-- Status Pill -->
+  <g transform="translate(930, 48)">
+    <rect width="210" height="38" rx="19" fill="#141E33" stroke="#10B981" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="20" cy="19" r="5" fill="#00FF88" />
+    <circle cx="20" cy="19" r="8" fill="#00FF88" fill-opacity="0.25" />
+    <text x="36" y="24" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#E2E8F0">WS SERVER: <tspan fill="#00FF88">ONLINE</tspan></text>
+  </g>
+
+  <!-- LEFT: ADMIN INTERFACE MOCKUP -->
+  <g transform="translate(60, 120)">
+    <rect width="480" height="330" rx="14" fill="url(#cardGrad)" stroke="#10B981" stroke-opacity="0.3" stroke-width="1.5" />
+    
+    <!-- Admin Header -->
+    <rect x="16" y="16" width="448" height="44" rx="8" fill="#0A111E" stroke="#1E293B" />
+    <circle cx="36" cy="38" r="6" fill="#EF4444" />
+    <circle cx="54" cy="38" r="6" fill="#F59E0B" />
+    <circle cx="72" cy="38" r="6" fill="#10B981" />
+    <text x="170" y="43" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">PAINEL DO ADMINISTRADOR</text>
+
+    <!-- Metrics Row -->
+    <g transform="translate(16, 75)">
+      <rect width="216" height="74" rx="10" fill="#0E172A" stroke="#1E293B" />
+      <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#64748B">CONEXÕES ATIVAS</text>
+      <text x="16" y="58" font-family="'Courier New', monospace" font-size="28" font-weight="800" fill="#00FF88">48 <tspan font-size="14" fill="#94A3B8">online</tspan></text>
+    </g>
+
+    <g transform="translate(248, 75)">
+      <rect width="216" height="74" rx="10" fill="#0E172A" stroke="#1E293B" />
+      <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#64748B">RODADA ATUAL</text>
+      <text x="16" y="58" font-family="'Courier New', monospace" font-size="28" font-weight="800" fill="url(#goldGrad)">#03</text>
+    </g>
+
+    <!-- Action Button -->
+    <g transform="translate(16, 168)">
+      <rect width="448" height="52" rx="10" fill="#10B981" fill-opacity="0.18" stroke="#10B981" stroke-width="1.5" />
+      <text x="135" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" fill="#00FF88">🎲 DISPARAR NOVO SORTEIO</text>
+    </g>
+
+    <!-- Console Log Mockup -->
+    <g transform="translate(16, 236)">
+      <rect width="448" height="74" rx="8" fill="#060A12" stroke="#1E293B" />
+      <text x="14" y="22" font-family="'Courier New', monospace" font-size="11" fill="#10B981">[18:00:12] ws: 48 clientes sincronizados em tempo real.</text>
+      <text x="14" y="42" font-family="'Courier New', monospace" font-size="11" fill="#94A3B8">[18:00:15] sorteio: vencedor selecionado com sucesso!</text>
+      <text x="14" y="62" font-family="'Courier New', monospace" font-size="11" fill="#FCD34D">[18:00:15] broadcast: código emitido para o ticket #VNY-9284</text>
+    </g>
+  </g>
+
+  <!-- CENTER: REALTIME WEBSOCKET FLOW INDICATOR -->
+  <g transform="translate(565, 230)">
+    <circle cx="35" cy="40" r="30" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-width="1.5" />
+    <text x="23" y="46" font-size="20">⚡</text>
+    <!-- Arrow Left to Right -->
+    <path d="M -15 40 L 5 40" stroke="#10B981" stroke-width="2" stroke-dasharray="4 4" />
+    <path d="M 65 40 L 85 40" stroke="#10B981" stroke-width="2" stroke-dasharray="4 4" />
+    <text x="12" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#10B981" letter-spacing="1">WEBSOCKET</text>
+  </g>
+
+  <!-- RIGHT: CLIENT VIEW MOCKUP (WINNER SCREEN) -->
+  <g transform="translate(660, 120)">
+    <rect width="480" height="330" rx="14" fill="url(#cardGrad)" stroke="#EAB308" stroke-opacity="0.4" stroke-width="1.5" />
+    
+    <!-- Client Header -->
+    <rect x="16" y="16" width="448" height="44" rx="8" fill="#0A111E" stroke="#1E293B" />
+    <circle cx="36" cy="38" r="6" fill="#10B981" />
+    <text x="50" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#00FF88">CONECTADO AO SORTEIO</text>
+    <text x="350" y="42" font-family="'Courier New', monospace" font-size="11" fill="#94A3B8">ID: #4829</text>
+
+    <!-- Winner Announcement Ticket -->
+    <g transform="translate(40, 85)">
+      <rect width="400" height="210" rx="14" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="2" />
+      
+      <!-- Ticket Ribbon / Stamp -->
+      <text x="120" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" fill="#0F172A">🎉 VOCÊ GANHOU!</text>
+      <text x="80" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#475569">Apresente seu código de validação ao organizador:</text>
+
+      <!-- Golden Ticket Code Box -->
+      <rect x="30" y="85" width="340" height="60" rx="10" fill="#FEF08A" stroke="#EAB308" stroke-width="2" stroke-dasharray="6 4" />
+      <text x="85" y="124" font-family="'Courier New', monospace" font-size="24" font-weight="900" fill="#854D0E" letter-spacing="4">VNY-9284-WIN</text>
+
+      <!-- Haptic Feedback Badge -->
+      <g transform="translate(100, 162)">
+        <rect width="200" height="26" rx="13" fill="#0F172A" />
+        <text x="24" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#FDE047">📳 VIBRAÇÃO TÁTIL ATIVADA</text>
+      </g>
+    </g>
+  </g>
+</svg>
